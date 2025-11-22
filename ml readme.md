@@ -134,5 +134,76 @@ soil_pH             ███
 ---
 ## 🚀 Model Deployment
 
+A Flask-based web application that predicts whether irrigation is needed based on environmental factors using a trained XGBoost machine learning model.
+
+## 📁 Project Structure
+```
+irrigation-model-deployment/
+│
+├── app.ipynb                    # Main Flask application notebook
+├── irrigation_model.pkl         # Trained XGBoost model
+│
+└── templates/                   # HTML templates folder
+    ├── index.html              # Input form page
+    └── result.html             # Prediction results page
+```
+
+## 🚀 Features
+
+- ✅ **Web Interface**: User-friendly HTML forms for data input
+- ✅ **REST API**: JSON endpoint for programmatic access
+- ✅ **Real-time Predictions**: Instant irrigation recommendations
+- ✅ **Multiple Input Parameters**: Considers 6 environmental factors
+- ✅ **Dual Response Format**: Supports both HTML and JSON responses
+- ✅ **Pre-trained Model**: Ready-to-use XGBoost classifier
+
+## 📊 Input Parameters
+
+The model accepts the following parameters to make predictions:
+**image**
+
+## 💻 Usage
+
+### Running with Jupyter Notebook
+
+1. **Start Jupyter Notebook**:
+```bash
+   jupyter notebook
+```
+
+2. **Open `app.ipynb`**
+
+3. **Run all cells** (Cell → Run All)
+
+4. **Access the application**:
+   - Open browser: `http://127.0.0.1:5000`
+
+### Prediction Codes
+
+- `1` - **Irrigation Needed**
+- `0` - **No Irrigation Required**
+
+## 📁 File Descriptions
+
+### `app.ipynb`
+Main application file containing:
+- Flask app initialization
+- Model loading logic
+- Route definitions (`/` and `/predict`)
+- Request handling for both form and JSON data
+
+### `irrigation_model.pkl`
+Serialized XGBoost model trained on irrigation dataset. Contains the trained classifier ready for predictions.
+
+### `templates/index.html`
+Homepage with input form for collecting environmental parameters from users.
+
+### `templates/result.html`
+Results page displaying prediction outcome and the input parameters used.
+
+### `requirements.txt`
+List of Python packages required to run the application.
+
+
 
 
