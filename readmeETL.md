@@ -64,6 +64,7 @@ Extract temporal features from timestamp:
 - `sunlight_daily` → Total daily sunlight hours per region
 - `pesticide_trend` → Pesticide usage trends by crop and region
 
+
 - **Aggregated Tables in MySQL:**
 
 ![Aggregated tables](images/derived_tables.png)
@@ -74,9 +75,11 @@ Extract temporal features from timestamp:
 - **Constraints:** primary keys and composite keys prevent duplicates
 - **JDBC Connection:** to directly write from Spark to MySQL
 
+
 - **Example of the data loaded into the MySQL data warehouse (fact_sensor_data table):**
 
 ![MySQL Fact Table](images/fact_table.png)
+
 
 - **The Data Star Schema (Fact and dimension tables):**
 
