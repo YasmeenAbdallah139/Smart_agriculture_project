@@ -65,7 +65,7 @@ Extract temporal features from timestamp:
 - `pesticide_trend` → Pesticide usage trends by crop and region
 
 - **Aggregated Tables in MySQL:**
--  ![Aggregated tables](images/derived tables.png)
+-  ![Aggregated tables](images/derived_tables.png)
 
 ### 6. Loading to MySQL
 - **Mode:** `append` (incremental loads)
@@ -77,7 +77,7 @@ Extract temporal features from timestamp:
 - ![MySQL Fact Table](images/fact_table.png)
 
 - **The Data Star Schema (Fact and dimention tables):**
-- ![Star Schema](images/star schema.png)
+- ![Star Schema](images/star_schema.png)
 
 ### 7. Checkpoint Update
 - **After successful load:** It updates the checkpoint with the maximum timestamp of the processed batch
