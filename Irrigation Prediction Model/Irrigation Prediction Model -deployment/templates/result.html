@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .result {
+            text-align: center;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .irrigation-needed {
+            background-color: #e74c3c;
+            color: white;
+        }
+        .no-irrigation {
+            background-color: #2ecc71;
+            color: white;
+        }
+        .input-data {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .input-data h3 {
+            margin-top: 0;
+            color: #34495e;
+        }
+        .back-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .back-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌱 Irrigation Prediction Result</h1>
+        
+        <div class="input-data">
+            <h3>Input Parameters:</h3>
+            <p><strong>Soil Moisture:</strong> {{ input.soil_moisture }}%</p>
+            <p><strong>Temperature:</strong> {{ input.temperature }}°C</p>
+            <p><strong>Humidity:</strong> {{ input.humidity }}%</p>
+            <p><strong>Rainfall:</strong> {{ input.rainfall }} mm</p>
+            <p><strong>Sunlight Intensity:</strong> {{ input.sunlight_intensity }} W/m²</p>
+            <p><strong>Soil pH:</strong> {{ input.soil_pH }}</p>
+        </div>
+
+        <div class="result {% if prediction == 'Irrigation Needed' %}irrigation-needed{% else %}no-irrigation{% endif %}">
+            {{ prediction }}
+        </div>
+
+        <div style="text-align: center;">
+            <a href="/" class="back-btn">Make Another Prediction</a>
+        </div>
+    </div>
+</body>
+</html>
