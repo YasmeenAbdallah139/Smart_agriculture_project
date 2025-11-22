@@ -65,7 +65,7 @@ Extract temporal features from timestamp:
 - `pesticide_trend` → Pesticide usage trends by crop and region
 
 - **Aggregated Tables in MySQL:**
--  ![Aggregated tables](images/derived_tables.png)
+![Aggregated tables](images/derived_tables.png)
 
 ### 6. Loading to MySQL
 - **Mode:** `append` (incremental loads)
@@ -74,10 +74,10 @@ Extract temporal features from timestamp:
 - **JDBC Connection:** to directly write from Spark to MySQL
 - 
 - **Example of the data loaded into the MySQL data warehouse (fact_sensor_data table):**
-- ![MySQL Fact Table](images/fact_table.png)
+![MySQL Fact Table](images/fact_table.png)
 
-- **The Data Star Schema (Fact and dimention tables):**
-- ![Star Schema](images/star_schema.png)
+- **The Data Star Schema (Fact and dimension tables):**
+![Star Schema](images/star_schema.png)
 
 ### 7. Checkpoint Update
 - **After successful load:** It updates the checkpoint with the maximum timestamp of the processed batch
