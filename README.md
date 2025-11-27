@@ -246,12 +246,10 @@ After Spark has been processing for a few minutes, verify that data is successfu
 
 Open your PostgreSQL client (VS Code or pgAdmin) and connect to the `smart_farming` database. Open a new query editor and execute:
 ```sql
-SELECT * FROM sensor_data
-ORDER BY timestamp DESC
-LIMIT 50;
+SELECT * FROM sensor_data;
 ```
 
-This query retrieves the 50 most recent sensor readings, ordered by timestamp. If everything is working correctly, you should see rows of data with sensor IDs, timestamps, and all your sensor measurements.
+This query retrieves  sensor readings. If everything is working correctly, you should see rows of data with sensor IDs, timestamps, and all your sensor measurements.
 
 <p align="center">
   <img src="images/postgrestable.jpg" alt="PostgreSQL sensor_data table showing ingested records" />
