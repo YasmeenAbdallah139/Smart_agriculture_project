@@ -174,7 +174,7 @@ PostgreSQL serves as the real-time database for your streaming pipeline. Before 
 - create a connetion either with vs code databasee connections of pgadmin
   this is the conncetion settings in vs code
   ![connection](images/connection.jpg)
-- or use the localhost of postgres admin 
+- or use the localhost of pgadmin 
 create database and name it **smart_farming**
 and create the table with schema in the database
 
