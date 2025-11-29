@@ -1,4 +1,4 @@
-# 🌾 Smart Agriculture IoT Pipeline for Crop Yield Optimization
+# 🌾 AGRISENSE
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-Streaming-black.svg)](https://kafka.apache.org/)
@@ -12,6 +12,9 @@
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626.svg)](https://jupyter.org/)
 [![Flask](https://img.shields.io/badge/Flask-ML%20Deployment-black.svg)](https://flask.palletsprojects.com/)
 [![Power BI](https://img.shields.io/badge/Power%20BI-Visualization-F2C811.svg)](https://powerbi.microsoft.com/)
+<p align="center">
+  <img src="images/AGRISENSE.png" alt="LOGO" width='300' />
+</p>
 
 
 ## 📋 Overview
