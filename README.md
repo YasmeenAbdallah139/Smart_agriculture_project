@@ -286,7 +286,23 @@ streamlit run agg_streamlit.py
 **Access at:** `http://localhost:8501`
 
 ---
+b. Dashboard Features
+Real-time sensor readings (soil moisture, temperature, pH, etc.)
+Interactive trend charts with threshold alerts
+Critical/Warning alerts based on sensor thresholds
+Email notifications for alerts (configurable in sidebar)
+Farm & Region filtering
+Historical data table
+Auto-refresh every 1 second
 
+c. Configure Email Alerts (Optional)
+In the sidebar of the dashboard:
+
+Enable "Enable Email Alerts"
+Enter:
+* Farmer's Email: farmer@example.com
+* Sender Email: your_email@gmail.com
+* Sender Password: Use App Password (for Gmail)
 
 
 How to get App Password (Gmail):
